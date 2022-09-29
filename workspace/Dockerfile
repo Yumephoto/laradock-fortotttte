@@ -1472,7 +1472,7 @@ RUN if [ ${INSTALL_WKHTMLTOPDF} = true ]; then \
 ARG INSTALL_MAILPARSE=false
 
 RUN if [ ${INSTALL_MAILPARSE} = true ]; then \
-    apt-get install -yqq php-mailparse \
+    apt-get install -yqq php${LARADOCK_PHP_VERSION}-mailparse \
 ;fi
 
 ###########################################################################
